@@ -1,0 +1,32 @@
+.potion-scroll {
+    background: #c9b5b5;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.1);
+  }
+  
+  .ingredient-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .glowing-item {
+    animation: potion-glow 2s infinite alternate;
+  }
+  
+  @keyframes potion-glow {
+    from { box-shadow: 0 0 5px #00ffff; }
+    to { box-shadow: 0 0 15px #00ffff; }
+  }
+  
+  .brew-button {
+    background: linear-gradient(to right, #4CAF50, #45a049);
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
+  
+  .brew-button:hover {
+    transform: scale(1.05);
+  }

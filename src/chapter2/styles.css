@@ -1,0 +1,44 @@
+.moving-castle {
+    background: #faeded;
+    padding: 2rem;
+    border-radius: 8px;
+    animation: castleGlow 3s infinite alternate;
+  }
+  
+  @keyframes castleGlow {
+    from { box-shadow: 0 0 10px #ffd70033; }
+    to { box-shadow: 0 0 30px #ffd700aa; }
+  }
+  
+  .gryffindor {
+    border-left: 5px solid #ae0001;
+    background: #ffd80022;
+  }
+  
+  .student-card {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    margin: 0.5rem 0;
+    background: #e6dfdf;
+    transition: transform 0.3s;
+  }
+  
+  .student-card:hover {
+    transform: translateX(10px);
+  }
+  
+  .golden-button {
+    background: linear-gradient(to right, #ffd700, #ffaa00);
+    color: rgb(184, 174, 174);
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+  }
+  
+  .score-control {
+    margin-left: auto;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+  }

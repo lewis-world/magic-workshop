@@ -1,0 +1,52 @@
+.moving-stairs {
+    position: relative;
+    background: url('stone-wall.jpg');
+    padding: 2rem;
+    min-height: 80vh;
+  }
+  
+  .stair {
+    background: linear-gradient(45deg, #dbd3d3, #5a5a5a);
+    border-radius: 8px;
+    transition: all 3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.3);
+  }
+  
+  .stair.transitioning {
+    animation: stairGlow 2s infinite alternate;
+  }
+  
+  @keyframes stairGlow {
+    from { filter: brightness(1); }
+    to { filter: brightness(1.3); }
+  }
+  
+  .hover-sparkles {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, gold 10%, transparent 70%);
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .stair:hover .hover-sparkles {
+    opacity: 0.3;
+  }
+  
+  .spell-button {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background: linear-gradient(45deg, #ffd700, #ffaa00);
+    padding: 1rem 2rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: transform 0.3s;
+  }
+  
+  .spell-button:disabled {
+    background: #666;
+    cursor: not-allowed;
+  }

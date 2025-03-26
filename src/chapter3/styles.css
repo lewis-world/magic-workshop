@@ -1,0 +1,54 @@
+.dark-arts-container {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background: #e0dbdb;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.1);
+  }
+  
+  .loading {
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  .bubbling-cauldron {
+    position: relative;
+    height: 100px;
+    margin: 20px auto;
+    width: 100px;
+  }
+  
+  .bubble {
+    position: absolute;
+    background: #ff4444;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    animation: bubble 1.4s infinite;
+  }
+  
+  @keyframes bubble {
+    0% { transform: translateY(0); opacity: 0; }
+    30% { opacity: 1; }
+    60% { transform: translateY(-30px); }
+    100% { transform: translateY(-60px); opacity: 0; }
+  }
+  
+  .forbidden-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .glowing-item {
+    padding: 1rem;
+    margin: 0.5rem 0;
+    background: #c9abab;
+    border-left: 4px solid #ff0000;
+    animation: red-glow 1.5s infinite alternate;
+  }
+  
+  @keyframes red-glow {
+    from { box-shadow: 0 0 5px rgba(255, 0, 0, 0.3); }
+    to { box-shadow: 0 0 15px rgba(255, 0, 0, 0.6); }
+  }

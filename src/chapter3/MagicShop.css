@@ -1,0 +1,42 @@
+/* 魔法主题样式 */
+.magic-shop {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: #faefef;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.1);
+  }
+  
+  .glowing-item {
+    padding: 1rem;
+    margin: 0.5rem 0;
+    background: #e6dddd;
+    border-left: 4px solid #7cfc00;
+    animation: glow 1.5s infinite alternate;
+  }
+  
+  @keyframes glow {
+    from { box-shadow: 0 0 5px rgba(124, 252, 0, 0.5); }
+    to { box-shadow: 0 0 15px rgba(124, 252, 0, 0.8); }
+  }
+  
+  .spell-button {
+    background: #4CAF50;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  
+  .spell-button.casting {
+    background: #FFC107;
+    animation: pulse 1s infinite;
+  }
+  
+  @keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+  }

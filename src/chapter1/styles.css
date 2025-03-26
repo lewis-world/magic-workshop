@@ -1,0 +1,58 @@
+.owl-form {
+    max-width: 500px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background: #e2cbcb;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.1);
+  }
+  
+  .form-group {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr auto;
+  }
+  
+  input {
+    padding: 12px;
+    background: #e9e3e3;
+    border: 1px solid #e6e6e6;
+    color: #fff;
+    border-radius: 4px;
+  }
+  
+  .spell-button {
+    background: #4CAF50;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  
+  .spell-button.casting {
+    background: #FFC107;
+    animation: pulse 1s infinite;
+  }
+  
+  .owl-alert {
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: 4px;
+  }
+  
+  .error {
+    background: #ff444477;
+    border: 1px solid #ff4444;
+  }
+  
+  .success {
+    background: #00c85177;
+    border: 1px solid #00c851;
+  }
+  
+  @keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+  }

@@ -1,0 +1,36 @@
+.owl-message {
+    max-width: 600px;
+    padding: 1rem;
+    background: #f0e9e9;
+    border-radius: 8px;
+  }
+  
+  .message-bubble {
+    position: relative;
+    padding: 1rem;
+    margin: 1rem 0;
+    background: #d8d2d2;
+    border-radius: 8px;
+    animation: glow 2s infinite alternate;
+  }
+  
+  .owl-flight {
+    position: absolute;
+    right: -30px;
+    top: 50%;
+    width: 40px;
+    height: 40px;
+    background: url(owl-sprite.png);
+    animation: fly 1s infinite;
+  }
+  
+  @keyframes glow {
+    from { box-shadow: 0 0 5px rgba(255,215,0,0.3); }
+    to { box-shadow: 0 0 15px rgba(255,215,0,0.6); }
+  }
+  
+  .owl-alert {
+    color: #ff4444;
+    padding: 0.5rem;
+    border: 1px solid #ff4444;
+  }
