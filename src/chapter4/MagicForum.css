@@ -1,0 +1,20 @@
+.flapping {
+    animation: flap 0.5s infinite;
+    margin-right: 8px;
+  }
+  
+  .flying-owl {
+    animation: fly 2s infinite;
+    font-size: 2rem;
+  }
+
+  @keyframes flap {
+    0% { transform: rotate(0deg); }
+    50% { transform: rotate(-20deg); }
+    100% { transform: rotate(0deg); }
+  }
+
+  @keyframes fly {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100vw); }
+  }

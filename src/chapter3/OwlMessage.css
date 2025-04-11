@@ -20,7 +20,6 @@
     top: 50%;
     width: 40px;
     height: 40px;
-    background: url(owl-sprite.png);
     animation: fly 1s infinite;
   }
   

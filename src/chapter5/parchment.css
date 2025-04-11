@@ -1,0 +1,38 @@
+.owl-nest {
+    border: 2px solid goldenrod;
+    padding: 20px;
+    background: #f5e6d3;
+}
+  
+.cipher-text {
+    font-family: 'Runes';
+    color: #5c3b1a;
+}
+
+.patronus-btn {
+    background: linear-gradient(to right, #2c5364, #203a43);
+    color: white;
+    padding: 10px 20px;
+}
+
+/* 添加SVG滤镜增强魔法效果 */
+
+.patronus-container {
+    position: relative;
+    display: inline-block;
+    filter: 
+        drop-shadow(0 0 8px #61dafb88)
+        url(#magic-glow);
+    overflow: visible;
+}
+  
+.button-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    color: rgb(107, 105, 105);
+    font-size: 16px;
+    cursor: pointer;
+}  

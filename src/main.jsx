@@ -1,10 +1,11 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import './index.css'
-import App from './App3.jsx'
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import App from './App5';
+// import './index.css';
 
-createRoot(document.getElementById('root')).render(
-  <StrictMode>
+// 启动魔法阵
+ReactDOM.createRoot(document.getElementById('root')).render(
+  <React.StrictMode>
     <App />
-  </StrictMode>,
-)
+  </React.StrictMode>
+);
