@@ -1,0 +1,105 @@
+/* 基础样式 */
+.app {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .parchment {
+    background-color: #f5e9d9;
+    border: 2px solid #d4b483;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2, h3 {
+    color: #5d4037;
+    text-align: center;
+  }
+  
+  /* 魔杖区域样式 */
+  .wand-area {
+    background-color: #efebe9;
+    padding: 15px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+  }
+  
+  .gesture-buttons {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin: 10px 0;
+  }
+  
+  .gesture-buttons button {
+    padding: 8px 12px;
+    background-color: #8d6e63;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .gesture-buttons button:hover {
+    background-color: #6d4c41;
+  }
+  
+  /* 咒语追踪器样式 */
+  .spell-tracker {
+    background-color: #e8f5e9;
+    padding: 15px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+  }
+  
+  .current-spell {
+    margin: 10px 0;
+    padding: 8px;
+    background-color: #c8e6c9;
+    border-radius: 4px;
+  }
+  
+  .spell-history {
+    font-size: 0.9em;
+    color: #2e7d32;
+  }
+  
+  /* 秘密通道样式 */
+  .secret-passage {
+    background-color: #e3f2fd;
+    padding: 15px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+  }
+  
+  .secret-passage.revealed {
+    background-color: #bbdefb;
+  }
+  
+  .secret-passage button {
+    padding: 8px 12px;
+    background-color: #1976d2;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .passage-content {
+    margin-top: 10px;
+    text-align: center;
+    animation: fadeIn 0.5s ease;
+  }
+  
+  .passage-icon {
+    font-size: 2rem;
+    margin-top: 5px;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }

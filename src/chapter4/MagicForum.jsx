@@ -1,4 +1,3 @@
-// components/MagicForum.jsx
 import { useActionState, useOptimistic } from 'react';
 import { submitPost } from './magicApi';
 import { FaDove } from 'react-icons/fa6';

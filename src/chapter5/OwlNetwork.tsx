@@ -34,7 +34,7 @@ export const OwlNetwork = ({ children }) => {
     setMessages([]);
   }, []);
 
-  // 上下文值优化（网页8策略）
+  // 上下文值优化
   const contextValue = useMemo(() => ({
     messages,
     sendMessage,
