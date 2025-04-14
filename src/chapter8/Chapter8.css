@@ -1,0 +1,96 @@
+/* 通用表单样式 */
+.magic-form, .time-form, .spell-form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  }
+  
+  .form-field {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  input, select, textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .error {
+    color: #d32f2f;
+    font-size: 0.8em;
+    margin-top: 5px;
+  }
+  
+  .submit-button, .time-button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* 时间表单特殊样式 */
+  .time-form {
+    background-color: #e3f2fd;
+  }
+  
+  .time-button {
+    background-color: #1976d2;
+  }
+  
+  /* 动态咒语表单样式 */
+  .spell-form {
+    background-color: #fff8e1;
+  }
+  
+  .spell-item {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-left: 3px solid #ffc107;
+    transition: all 0.3s;
+  }
+  
+  .spell-item.active {
+    background-color: #fff3e0;
+    border-left-color: #ff9800;
+  }
+  
+  .spell-input {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .remove-button {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 0 10px;
+    cursor: pointer;
+  }
+  
+  .add-button {
+    background-color: #2196f3;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  
+  .spell-tip .warning {
+    color: #f57c00;
+    font-weight: bold;
+  }

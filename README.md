@@ -11,3 +11,7 @@ npm install @formkit/auto-animate lodash.memoize
 
 chatper4需要安装
 npm install react-redux @reduxjs/toolkit lodash.throttle react-icons
+
+
+chatper4需要安装
+npm install react-hook-form yup formik @hookform/resolvers
