@@ -1,0 +1,80 @@
+.dark-arts-lab {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .ministry-warning {
+    padding: 10px;
+    background-color: #ffeb3b;
+    color: #d32f2f;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    animation: flash 0.5s 3;
+  }
+  
+  @keyframes flash {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+  }
+  
+  .spell-section, .horcrux-section {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: white;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  input {
+    padding: 8px;
+    margin-right: 10px;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  button {
+    padding: 8px 15px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    transition: all 0.2s;
+  }
+  
+  button:hover {
+    transform: translateY(-1px);
+  }
+  
+  .danger-button {
+    background-color: #f44336;
+    color: white;
+  }
+  
+  .danger-button:hover {
+    background-color: #d32f2f;
+  }
+  
+  .defense-button {
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  .defense-button:hover {
+    background-color: #388e3c;
+  }
+  
+  .spell-list {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+  }
+  
+  .spell-list ul {
+    padding-left: 20px;
+  }
