@@ -1,0 +1,48 @@
+/* 全局魔法动画 */
+@keyframes pulse {
+    0% { opacity: 0.8; }
+    50% { opacity: 0.4; }
+    100% { opacity: 0.8; }
+}
+
+@keyframes floating {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
+
+.patronus-container {
+    animation: floating 3s ease-in-out infinite;
+}
+
+.time-turner-ui {
+    transition: all 0.5s;
+    &:hover {
+        transform: rotate(15deg);
+    }
+}
+
+.sparkle-effect {
+    background: linear-gradient(90deg, gold, white, gold);
+    background-size: 200% auto;
+    color: black;
+    animation: shine 2s linear infinite;
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+}
+
+@keyframes shine {
+    to {
+        background-position: 200% center;
+    }
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+}
+
+@keyframes loadingPulse {
+    0%, 100% { opacity: 0.8; width: 70%; }
+    50% { opacity: 1; width: 75%; }
+}
