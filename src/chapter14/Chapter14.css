@@ -1,0 +1,153 @@
+/* app/globals.css */
+.dementor-alert {
+    background: linear-gradient(135deg, #2c3e50, #4a6491);
+    border: 3px solid #ff0000;
+    animation: pulse-alert 2s infinite;
+  }
+  
+  @keyframes pulse-alert {
+    0% { box-shadow: 0 0 10px red; }
+    50% { box-shadow: 0 0 25px darkred; }
+    100% { box-shadow: 0 0 10px red; }
+  }
+  
+  .spell-interface {
+    padding: 2rem;
+  }
+  
+  .wand.lumos {
+    animation: lumos 1s ease-out;
+  }
+  
+  @keyframes lumos {
+    0% { filter: drop-shadow(0 0 5px white); }
+    100% { filter: drop-shadow(0 0 30px gold); }
+  }
+  
+  button.casting {
+    background: repeating-linear-gradient(
+      45deg,
+      #ffd700,
+      #ffd700 10px,
+      #e6c200 10px,
+      #e6c200 20px
+    );
+  }
+
+  .spell-result {
+    color: var(--spell-color, gold);
+    text-shadow: 0 0 5px currentColor;
+    transition: all 0.5s ease;
+  }
+  
+  @keyframes spell-cast {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+  }
+  
+  button:active {
+    animation: spell-cast 0.3s ease;
+  }
+
+  /* styles.css */
+.dark-arts-defense {
+  font-family: 'Cinzel', serif;
+  text-align: center;
+}
+
+.casting-spell {
+  background: linear-gradient(to right, #003366, #0066cc);
+  transform: scale(0.95);
+}
+
+.spell-effect {
+  margin-top: 2rem;
+  font-size: 1.5em;
+  text-shadow: 0 0 10px silver;
+}
+
+.patronus-zoom {
+  animation: zoom 1.5s ease-out;
+}
+
+@keyframes zoom {
+  0% { transform: scale(0.5); opacity: 0; }
+  80% { transform: scale(1.1); }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+.wand {
+  cursor: url('wand-cursor.png'), pointer;
+  font-size: 2rem;
+  transition: transform 0.3s;
+}
+.wand:hover {
+  transform: rotate(15deg);
+}
+
+.library-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background: url('/parchment-bg.jpg');
+  border: 3px solid #d4af37;
+}
+
+.book-shelf {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.book-card {
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 5px;
+  cursor: url('/wand-cursor.png'), pointer;
+  transition: transform 0.3s;
+}
+
+.book-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.summary {
+  margin-top: 0.5rem;
+  font-size: 0.9em;
+  color: #555;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.header {
+  background-color: #f3f4f6; /* 浅灰色背景 */
+}
+
+.headerCell {
+  padding: 12px;
+  text-align: center; /* 表头居中 */
+  font-weight: 600;
+  border-bottom: 2px solid #e5e7eb;
+}
+
+.row {
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.cell {
+  padding: 12px;
+  text-align: center; /* 单元格居中 */
+  vertical-align: middle;
+}
+
+.loading {
+  text-align: center;
+  padding: 20px;
+  color: #6b7280;
+}
