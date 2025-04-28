@@ -1,0 +1,153 @@
+/* 霍格沃茨主题样式 */
+.hogwarts-theme {
+    --gold: #FFD700;
+    --scarlet: #AE0001;
+    --slytherin-green: #2A623D;
+    --ravenclaw-blue: #0E1A40;
+    --parchment: #F8F1E5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  /* 主厅样式 */
+  .main-hall {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: var(--parchment);
+    min-height: 100vh;
+  }
+  
+  .hogwarts-header {
+    background: linear-gradient(135deg, var(--scarlet) 0%, #740001 100%);
+    color: var(--gold);
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* 导航菜单 */
+  .magic-nav {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+    padding: 10px;
+    background: rgba(139, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  .nav-link {
+    padding: 10px 15px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #333;
+    background: rgba(255, 215, 0, 0.3);
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .nav-link:hover {
+    background: rgba(255, 215, 0, 0.6);
+    transform: translateY(-2px);
+  }
+  
+  .nav-link.active {
+    background: var(--gold);
+    color: var(--scarlet);
+    font-weight: bold;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* 魔药课专用样式 */
+  .potion-room {
+    background-size: 30%;
+    min-height: 60vh;
+    padding: 20px;
+  }
+  
+  .potion-room ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .potion-room li {
+    background: rgba(255, 255, 255, 0.8);
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 8px;
+    border-left: 5px solid var(--slytherin-green);
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  /* 时间转换器样式 */
+  .time-turner {
+    background: rgba(0, 0, 0, 0.03);
+    padding: 30px;
+    border-radius: 10px;
+    border: 1px dashed var(--ravenclaw-blue);
+  }
+  
+  .time-turner textarea {
+    width: 100%;
+    min-height: 200px;
+    padding: 15px;
+    margin: 15px 0;
+    border: 1px solid var(--gold);
+    background: rgba(255, 215, 0, 0.05);
+    font-family: inherit;
+  }
+  
+  .time-turner button {
+    background: var(--ravenclaw-blue);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  
+  .time-turner button:hover {
+    background: #1A2A6C;
+  }
+  
+  /* 学院徽章 */
+  .house-badge {
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-weight: bold;
+    background: linear-gradient(45deg, #a39595, #c0c0c0);
+  }
+  
+  /* 加载状态 */
+  .potion-brewing {
+    font-style: italic;
+    color: var(--ravenclaw-blue);
+    animation: pulse 2s infinite;
+  }
+  
+  @keyframes pulse {
+    0% { opacity: 0.6; }
+    50% { opacity: 1; }
+    100% { opacity: 0.6; }
+  }
+  
+  /* 响应式调整 */
+  @media (max-width: 768px) {
+    .hogwarts-header {
+      flex-direction: column;
+      text-align: center;
+      gap: 15px;
+    }
+    
+    .magic-nav {
+      flex-direction: column;
+    }
+  }
