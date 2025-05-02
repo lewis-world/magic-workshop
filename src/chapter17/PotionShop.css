@@ -1,0 +1,134 @@
+/* 魔药商店主题 */
+.potion-shop {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Segoe UI', cursive;
+  }
+  
+  .potion-card {
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .potion-card.moon-sensitive {
+    border-left: 5px solid #6a0dad;
+  }
+  
+  .spell-button, .delete-button {
+    background: #4b5320;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    margin-right: 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  
+  .spell-button:hover, .delete-button:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .brewing-form {
+    background: rgba(0, 0, 0, 0.05);
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 30px;
+  }
+  
+  .spell-loading {
+    animation: pulse 1.5s infinite;
+  }
+  
+  @keyframes pulse {
+    0% { opacity: 0.6; }
+    50% { opacity: 1; }
+    100% { opacity: 0.6; }
+  }
+
+  .potion-card h3 {
+    margin: 0 0 10px 0; /* 下间距10px */
+    letter-spacing: 1px; /* 字间距 */
+    display: flex;
+    align-items: center;
+    gap: 8px; /* 图标与文字间距 */
+  }
+  
+  .potion-card p {
+    margin: 6px 0; /* 统一段落间距 */
+  }
+
+  .potion-name {
+    position: relative;
+  }
+  
+  .potion-icon {
+    font-size: 1.2em;
+    filter: drop-shadow(0 0 2px gold);
+  }
+  
+  .potion-badge {
+    font-size: 0.6em;
+    background: rgba(0, 0, 0, 0.1);
+    padding: 2px 6px;
+    border-radius: 10px;
+    margin-left: 8px;
+  }
+  
+  /* 不同魔药类型的颜色标记 */
+  [effect="luck"] { color: #2ecc71; }
+  [effect="transformation"] { color: #9b59b6; }
+  [effect="healing"] { color: #e74c3c; }
+
+  .brewing-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .form-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .form-row label {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .form-row label > span {
+    margin-left: 10px;
+    font-weight: normal;
+    color: #333;
+  }
+  
+  .form-row input[type="number"] {
+    width: 80px;
+    padding: 8px;
+    margin-left: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .brew-button {
+    margin-left: 20px;
+    padding: 8px 16px;
+    background-color: #8b4513;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .brew-button:hover {
+    background-color: #a0522d;
+  }
