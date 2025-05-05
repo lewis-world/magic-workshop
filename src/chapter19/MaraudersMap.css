@@ -1,0 +1,124 @@
+.magic-academy {
+  font-family: 'Cinzel', serif;
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #f9f5e9;
+  border: 2px solid #8b4513;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(139, 69, 19, 0.2);
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.header h1 {
+  color: #5d2906;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.status-box {
+  background: rgba(255, 255, 240, 0.7);
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 1rem;
+  min-height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.sort-btn {
+  background: linear-gradient(to right, #8b0000, #b22222);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1.1rem;
+  border-radius: 30px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0 auto;
+  transition: all 0.3s;
+}
+
+.sort-btn:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(139, 0, 0, 0.3);
+}
+
+.sort-btn.working {
+  background: linear-gradient(to right, #556b2f, #6b8e23);
+}
+
+.wizard-dossier {
+  animation: appear 0.6s ease-out;
+}
+
+@keyframes appear {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.house-banner {
+  background: rgba(139, 69, 19, 0.1);
+  padding: 8px;
+  border-radius: 5px;
+  text-align: center;
+  margin: 1rem 0;
+  font-weight: bold;
+}
+
+.spell-manual {
+  background: rgba(255, 255, 240, 0.8);
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.spell-btn {
+  background: none;
+  border: 1px solid #8b4513;
+  padding: 8px 15px;
+  border-radius: 20px;
+  margin: 5px 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.2s;
+}
+
+.spell-btn:hover {
+  background: rgba(139, 69, 19, 0.1);
+}
+
+.empty {
+  color: #8b0000;
+  font-style: italic;
+  text-align: center;
+}
+
+.spinner {
+  animation: spin 1s linear infinite;
+  display: inline-block;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.icon {
+  font-size: 1.2em;
+}
+
+.spell-icon {
+  color: #b8860b;
+}

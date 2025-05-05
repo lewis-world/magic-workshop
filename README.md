@@ -18,3 +18,6 @@ npm install react-hook-form yup formik @hookform/resolvers
 
 chatper13需要安装
 npm install react-router@latest
+
+chatper18需要安装
+npm install zustand
