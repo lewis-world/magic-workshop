@@ -21,3 +21,6 @@ npm install react-router@latest
 
 chatper18需要安装
 npm install zustand
+
+chatper21需要安装
+npm install vite-plugin-mock mockjs --save-dev
