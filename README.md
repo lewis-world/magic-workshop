@@ -24,3 +24,11 @@ npm install zustand
 
 chatper21需要安装
 npm install vite-plugin-mock mockjs --save-dev
+
+chatper26需要安装
+npm install --save-dev jest @testing-library/react @testing-library/user-event @testing-library/jest-dom jest-environment-jsdom msw
+npm install --save-dev @babel/preset-env @babel/preset-react babel-jest
+npm install --save-dev identity-obj-proxy
+
+chatper27需要安装
+npm install mobx mobx-react-lite
