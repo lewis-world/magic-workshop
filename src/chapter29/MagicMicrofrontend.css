@@ -1,0 +1,193 @@
+/* 魔法主题变量 */
+:root {
+  --gryffindor-red: #ae0001;
+  --gryffindor-gold: #d3a625;
+  --slytherin-green: #2a623d;
+  --slytherin-silver: #aaaaaa;
+  --ravenclaw-blue: #222f5b;
+  --ravenclaw-bronze: #946b2d;
+  --hufflepuff-yellow: #ecb939;
+  --hufflepuff-black: #372e29;
+  --magic-purple: #5d3a9e;
+}
+
+/* 主容器 */
+.magic-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  background: linear-gradient(135deg, #f5f7fa 0%, #e4e8eb 100%);
+  min-height: 100vh;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+/* 头部样式 */
+.magic-header {
+  background: var(--magic-purple);
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 4px solid var(--gryffindor-gold);
+}
+
+.house-selector select {
+  padding: 0.5rem;
+  border-radius: 4px;
+  border: none;
+  margin-left: 0.5rem;
+  background-color: white;
+}
+
+.house-points {
+  display: inline-block;
+  margin-left: 1rem;
+  padding: 0.3rem 0.8rem;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+}
+
+/* 导航样式 */
+.magic-nav {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem 2rem;
+  background: white;
+  border-bottom: 1px solid #eee;
+}
+
+.magic-nav button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  background-color: var(--magic-purple);
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.magic-nav button:hover {
+  background-color: #4a2d8a;
+  transform: translateY(-2px);
+}
+
+/* 主内容区 */
+.magic-main {
+  padding: 2rem;
+  min-height: 60vh;
+}
+
+.subapp-container {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.quantum-channel {
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: #f0f0ff;
+  border-left: 4px solid var(--magic-purple);
+}
+
+/* 魔药商店特定样式 */
+.potion-shop {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+.potion-selector {
+  display: flex;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.potion-selector select {
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  flex-grow: 1;
+}
+
+/* 酿造动画 */
+.brewing-animation {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.cauldron {
+  width: 100px;
+  height: 60px;
+  background-color: #333;
+  border-radius: 0 0 50px 50px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.cauldron::before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: 10px;
+  right: 10px;
+  height: 20px;
+  background-color: #333;
+  border-radius: 50%;
+}
+
+.bubbles {
+  position: relative;
+  height: 80px;
+}
+
+.bubble {
+  position: absolute;
+  background-color: rgba(174, 0, 1, 0.6);
+  border-radius: 50%;
+  animation: float 3s infinite ease-in-out;
+}
+
+@keyframes float {
+  0% { transform: translateY(0) scale(0.5); opacity: 0; }
+  50% { opacity: 1; }
+  100% { transform: translateY(-80px) scale(1.2); opacity: 0; }
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .magic-header {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .house-selector {
+    margin-top: 1rem;
+  }
+}
+
+/* 添加以下样式 */
+.loading {
+  text-align: center;
+  padding: 2rem;
+  font-size: 1.2rem;
+  color: var(--magic-purple);
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% { opacity: 0.6; }
+  50% { opacity: 1; }
+  100% { opacity: 0.6; }
+}
+
+.subapp-container {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  min-height: 400px;
+}
