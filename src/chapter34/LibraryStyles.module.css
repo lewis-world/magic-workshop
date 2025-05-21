@@ -1,0 +1,97 @@
+.libraryContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.title {
+  text-align: center;
+  color: #6a0dad;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  text-shadow: 1px 1px 2px rgba(106, 13, 173, 0.3);
+}
+
+.bookGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.bookCard {
+  background: white;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.bookCard:hover {
+  transform: translateY(-5px);
+}
+
+.bookCard h3 {
+  color: #4a2d7a;
+  margin-top: 0;
+}
+
+.bookCard p {
+  color: #555;
+  margin: 0.5rem 0;
+}
+
+.unavailable {
+  opacity: 0.7;
+  background-color: #f9f9f9;
+}
+
+.borrowForm {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.inputField {
+  padding: 0.6rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.borrowButton {
+  background-color: #8a4fff;
+  color: white;
+  border: none;
+  padding: 0.7rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.2s;
+}
+
+.borrowButton:hover {
+  background-color: #6a0dad;
+}
+
+.borrowButton:disabled {
+  background-color: #b399e6;
+  cursor: not-allowed;
+}
+
+.errorBox {
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: #ffebee;
+  border-left: 4px solid #f44336;
+  border-radius: 4px;
+}
+
+.successBox {
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: #e8f5e9;
+  border-left: 4px solid #4caf50;
+  border-radius: 4px;
+}
